@@ -1,6 +1,6 @@
 package edu.fiuba.algo3.modelo;
 
-public class EscYEsp implements Equipamiento{
+public class EscudoYEspada implements Equipamiento{
     public int usar(){
         return (2);
     }
