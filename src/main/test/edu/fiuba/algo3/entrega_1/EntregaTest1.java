@@ -83,6 +83,20 @@ public class EntregaTest1 {
         assertEquals(5,gladiador.pelearContraFiera());
 
     }
+    @Test
+    public void test08GladiadorNuevoPeleaConFieraConTodoElEquipamientoNoRecibeDañoTiene20DeEnergia() {
+
+        Gladiador gladiador = new Gladiador();
+
+        gladiador.equiparse();
+        gladiador.equiparse();
+        gladiador.equiparse();
+        gladiador.equiparse();
+        gladiador.equiparse();
+
+        assertEquals(20,gladiador.pelearContraFiera());
+
+    }
 
 
 }
