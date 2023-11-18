@@ -92,11 +92,28 @@ public class EntregaTest1 {
         gladiador.equiparse();
         gladiador.equiparse();
         gladiador.equiparse();
-        gladiador.equiparse();
 
         assertEquals(20,gladiador.pelearContraFiera());
 
     }
+    @Test
+    public void test09GladiadorNoCambiaNadaDespuesDeEquiparseSiTieneTodoElEquipamiento() {
 
+        Gladiador gladiador = new Gladiador();
+
+        gladiador.equiparse();
+        gladiador.equiparse();
+        gladiador.equiparse();
+        gladiador.equiparse();//Acá recibe llave
+
+        assertEquals(0,gladiador.usarEquipamiento());//Comprobando comportamiento
+
+        gladiador.equiparse();
+        gladiador.equiparse();
+        gladiador.equiparse();
+
+        assertEquals(0,gladiador.usarEquipamiento());//No cambia comportamiento
+
+    }
 
 }
